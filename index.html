@@ -6,33 +6,68 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Crystal Collector</title>
     <script src="https://code.jquery.com/jquery-3.1.1.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Ultra" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 </head>
 <body>
 
-    <h1>Crystal Collector!</h1>
-
-    <section id="directions-text"></section>
-
-    <div class="row">
-
-        <section id="numbers">
-            <p id="number-goal"></p>
-            <p id="score"></p>
-        </section>
-
-        <aside id="wins-losses">
-            <p id="wins"></p>
-            <p id="losses"></p>
-        </aside>
-
+    <div class="jumbotron">
+        <h1 class="text-center">Crystal Collector!</h1>
     </div>
 
-    <div class="buttons">       
-        <img class="image" id="image1" src="assets/images/crystal1.png">
-        <img class="image" id="image2" src="assets/images/crystal2.png">
-        <img class="image" id="image3" src="assets/images/crystal3.png">
-        <img class="image" id="image4" src="assets/images/crystal4.png">
+    <div class="container">
+
+        <section id="directions-text" class="panel panel-danger">
+            <div class="panel-heading">
+                <h3 class="panel-title">How to Play</h3>
+            </div>
+            <div class="panel-body">
+                <p>
+                You will be given a random number at the start of the game.
+                There are four crystals below. By clicking on a crystal you will add a specific amount of points to your total score.
+                You win the game by matching your total score to the random number; you lose the game if your total points exceed the random number.
+                The value of each crystal is hidden from you until you click on it.
+                Every time the game starts, the value of each crystal will change.
+                </p>
+            </div>
+        </section>
+
+        <div class="row">
+
+            <div class="section-container col-md-6 col-sm-6 col-xs-6">
+                <section id="numbers" class="panel panel-danger">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">Progress</h3>
+                    </div>
+                    <div class="panel-body">
+                        <p id="number-goal"></p>
+                        <p id="score"></p>
+                    </div>
+                </section>
+            </div>
+            
+            <div class="section-container col-md-6 col-sm-6 col-xs-6">
+                <section id="wins-losses" class="panel panel-danger">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">Tally</h3>
+                    </div>
+                    <div class="panel-body">
+                        <p id="wins"></p>
+                        <p id="losses"></p>
+                    </div>
+                </section>
+            </div>
+
+        </div>
+
+        <div class="crystal-wrapper panel panel-danger col-md-10">       
+            <img class="img-responsive col-md-3 col-sm-6 col-xs-6" id="image1" src="assets/images/crystal1.png">
+            <img class="img-responsive col-md-3 col-sm-6 col-xs-6" id="image2" src="assets/images/crystal2.png">
+            <img class="img-responsive col-md-3 col-sm-6 col-xs-6" id="image3" src="assets/images/crystal3.png">
+            <img class="img-responsive col-md-3 col-sm-6 col-xs-6" id="image4" src="assets/images/crystal4.png">
+        </div>
+
     </div>
 
     <!--link to JavaScript file-->

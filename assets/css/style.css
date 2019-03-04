@@ -1,0 +1,27 @@
+body{
+    background: url(../images/diamonds.jpg);
+}
+
+.jumbotron{
+    background: url(../images/banner.jpeg);
+    font-family: "Ultra";
+    color: cyan;
+    text-shadow: 4px 4px red;
+    padding-bottom: 35px;
+}
+
+.container{
+    width: 95%;
+}
+
+.panel-heading{
+    text-align: center;
+}
+
+p{
+    text-align: center;
+}
+
+.crystal-wrapper{
+    width: 100%;
+}

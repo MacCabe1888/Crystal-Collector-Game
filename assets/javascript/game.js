@@ -26,8 +26,11 @@ $(document).ready(function() {
         $("#score").text("Current Score: " + userTotal);
         crystalReset();
     }
+
+    let themes = [new Audio("assets/audio/MAGICAL SHIMMER FREE SOUND EFFECT.mp3"), new Audio("assets/audio/Glass Breaking Sound Effect.mp3")];
     
     function winner() {
+        themes[0].play();
         alert("You Win! (Final Score: " + userTotal + ")");
         wins++;
         $("#wins").text("Wins: " + wins);
@@ -35,6 +38,7 @@ $(document).ready(function() {
     }
     
     function loser() {
+        themes[1].play();
         alert("You Lose! (Final Score: " + userTotal + ")");
         losses++;
         $("#losses").text("Losses: " + losses);
